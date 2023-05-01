@@ -1,0 +1,139 @@
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    height: 100%;
+    box-shadow: 1px 1px 15px black;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+form {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, minmax(auto, 60px));
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 15px;
+    background-color: rgb(156, 153, 153);
+    outline: 2px solid rgb(116, 17, 17);
+}
+
+input:not(input[type="submit"]) {
+    width: 150px;
+    border: 3px solid goldenrod;
+}
+
+label#lnombre{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+input#nombre{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+label#lapellidos{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+input#apellidos{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+label#lemail{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+
+input#email{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+label#ltelefono{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+input#telefono{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+input[type="submit"] {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    width: 100%;
+    background-color: green;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 10px 15px 10px black;
+    border: 1px solid rgb(44, 16, 199);
+    
+}
+
+input[type="submit"]:active{
+    background-color: orange;
+}
+
+figure {
+    margin:0;
+}
+
+figure img{
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+    
+}
+
+input:invalid:focus {
+    background-color: rgb(204, 31, 31);
+}
+
+input[type="text"]:valid, 
+input[type="email"]:valid {
+    background-color: rgb(155, 192, 157);
+    border-color: blue;
+}
+
+#texto_3d {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #415566;
+    
+    text-shadow: 0 1px 0 #415566,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb, 
+                0 4px 0 #b9b9b9, 
+                0 5px 0 #aaa, 
+                0 6px 1px rgba(0, 0, 0, .1), 
+                0 0 5px rgba(0, 0, 0, .1), 
+                0 1px 3px rgba(0, 0, 0, .3), 
+                0 3px 5px rgba(0, 0, 0, .2), 
+                0 5px 10px rgba(0, 0, 0, .25), 
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15) ;   
+}
