@@ -26,8 +26,10 @@
             <input type="text" name="user_apellidos" id="apellidos" placeholder="Apellidos"
                 pattern="^[a-zA-ZáéíóúÁÉÍÓÚ\s,_-]{2,34}$" required>
             <label for="email" id="lemail">Email:</label>
+            <!-- <input type="email" name="email" id="email" placeholder="Email"
+                pattern="[a-zA-Z0-9]{2,}@[a-zA-Z0-9]{2,}.[a-zA-Z]{2,4}" size="30" required> -->
             <input type="email" name="email" id="email" placeholder="Email"
-                pattern="[a-zA-Z0-9]{2,}@[a-zA-Z0-9]{2,}.[a-zA-Z]{2,4}" size="30" required>
+                pattern="^[a-zA-Z0-9_\-\.~]{2,}@[a-zA-Z0-9_\-\.~]{2,}\.[a-zA-Z]{2,4}$" size="30" required>
             <label for="telefono" id="ltelefono">Teléfono:</label>
             <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]{9}">
             <input type="submit" value="Guardar">
